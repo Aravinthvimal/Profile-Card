@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;500&family=Red+Hat+Display:wght@300;400;500;700;900&family=Righteous&display=swap');
+  </style>
+
+  <style>
+
+    :root {
+      --DarkCyan : hsl(185, 75%, 39%);
+    }
+
+    body {
+      background-color: var(--DarkCyan); 
+      background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg); 
+      background-repeat: no-repeat no-repeat; 
+      background-position: right 759px top -520px, left 740px top 50vh;
+    }
+
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            LightGray : '#969696',
+            DarkGray : '#2d3248'
+          }
+        }
+      }
+    }
+  </script>
+
+  <title> Profile Card </title>
+</head>
+<body style="font-family: 'Kumbh Sans', sans-serif;" class="">
+  <main class="flex justify-center items-center relative w-full">
+    <div class="flex flex-col items-center bg-white rounded-xl absolute top-20 md:top-72 lg:absolute lg:top-1/2 lg:translate-y-1/2 ">
+      <img src="./images/bg-pattern-card.svg" class="object-fit object-cover rounded-t-xl" alt="card-bg">
+      <img src="./images/image-victor.jpg" class="relative -top-12 border-2 border-white bg-white p-1 object-fit object-cover rounded-full" alt="hero-img">
+      <h3 style="color: hsl(229, 23%, 23%);" class="flex relative -top-8 items-center gap-2 text-DarkGray text-lg font-bold "> Victor Crest <p class="font-normal text-LightGray"> 26 </p> </h3>
+      <p class="text-sm relative -top-7 font-semibold text-LightGray"> London </p>
+      <div class="w-full border-b border-LightGray "></div>
+      <div class="grid grid-rows-1 grid-flow-col gap-20 my-4">
+        <div class="flex flex-col text-center items-center">
+          <h3 class="text-sm text-DarkGray font-extrabold"> 80K </h3>
+          <p class="text-LightGray text-xs"> Followers </p>
+        </div>
+        <div class="flex flex-col text-center items-center">
+          <h3 class="text-sm text-DarkGray font-extrabold"> 803K </h3>
+          <p class="text-LightGray text-xs"> Likes </p>
+        </div>
+        <div class="flex flex-col text-center items-center">
+          <h3 class="text-sm text-DarkGray font-extrabold"> 1.4K </h3>
+          <p class="text-LightGray text-xs"> Photos </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
